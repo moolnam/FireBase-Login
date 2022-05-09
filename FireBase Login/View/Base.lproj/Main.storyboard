@@ -180,7 +180,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vYK-2T-312">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="674"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="FKp-LY-lKd">
@@ -193,22 +193,29 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="입력하기" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQq-9T-026">
-                                        <rect key="frame" x="0.0" y="674" width="414" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Ouf-ZN-MRS"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Eg-sM-VDp">
+                                        <rect key="frame" x="23.5" y="643" width="367" height="131"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="입력하기" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQq-9T-026">
+                                                <rect key="frame" x="0.0" y="15.5" width="300" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Ac2-qw-eCv"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Ouf-ZN-MRS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-Ad-9TO">
+                                                <rect key="frame" x="300" y="50" width="67" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="iQq-9T-026" firstAttribute="top" secondItem="vYK-2T-312" secondAttribute="bottom" id="4IO-Cq-K64"/>
-                                    <constraint firstItem="iQq-9T-026" firstAttribute="leading" secondItem="38k-pE-JEs" secondAttribute="leading" id="KUt-YL-Qdp"/>
                                     <constraint firstItem="vYK-2T-312" firstAttribute="leading" secondItem="38k-pE-JEs" secondAttribute="leading" id="UMC-3h-lg0"/>
                                     <constraint firstItem="vYK-2T-312" firstAttribute="top" secondItem="38k-pE-JEs" secondAttribute="top" id="aFx-K5-upd"/>
-                                    <constraint firstAttribute="trailing" secondItem="iQq-9T-026" secondAttribute="trailing" id="fcW-Y9-PyR"/>
-                                    <constraint firstAttribute="bottom" secondItem="iQq-9T-026" secondAttribute="bottom" id="gde-WT-GwC"/>
                                     <constraint firstAttribute="trailing" secondItem="vYK-2T-312" secondAttribute="trailing" id="xlB-EV-FEj"/>
                                 </constraints>
                             </stackView>

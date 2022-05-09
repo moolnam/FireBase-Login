@@ -10,31 +10,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="78" id="KGk-i7-Jjw" customClass="MessageCell" customModule="FireBase_Login" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="428" height="78"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="129" id="KGk-i7-Jjw" customClass="MessageCell" customModule="FireBase_Login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="129"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="428" height="78"/>
+                <rect key="frame" x="0.0" y="0.0" width="471" height="129"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MAb-mb-lV3">
-                        <rect key="frame" x="10" y="10" width="408" height="60"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MAb-mb-lV3">
+                        <rect key="frame" x="10" y="10" width="451" height="109"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Qa-n9-r0Y">
-                                <rect key="frame" x="10" y="10" width="348" height="40"/>
+                                <rect key="frame" x="0.0" y="10" width="391" height="99"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="if text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZF-yR-rBT">
-                                        <rect key="frame" x="8" y="12" width="322" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZF-yR-rBT">
+                                        <rect key="frame" x="10" y="10" width="371" height="79"/>
+                                        <string key="text">asdadsdsadsdsdasdsaddsadsadasdsadsadasdadsadasdsadsadasdasdasdasdasds asdadsdsadsdsdasdsaddsadsadasdsadsadasdadsadasdsadsadasdasdasdasdasdsasdadsdsadsdsdasdsaddsadsadasdsadsadasdadsadasdsadsadasdasdasdasdasds asdadsdsadsdsdasdsaddsadsadasdsadsadasdadsadasdsadsadasdasdasdasdasdsasdadsdsadsdsdasdsaddsadsadasdsadsadasdadsadasdsadsadasdasdasdasdasds asdadsdsadsdsdasdsaddsadsadasdsadsadasdadsadasdsadsadasdasdasdasdasds</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstItem="0ZF-yR-rBT" firstAttribute="leading" secondItem="1Qa-n9-r0Y" secondAttribute="leading" constant="10" id="NIo-Eo-iWg"/>
+                                    <constraint firstItem="0ZF-yR-rBT" firstAttribute="top" secondItem="1Qa-n9-r0Y" secondAttribute="top" constant="10" id="Ntq-ld-Cup"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ZF-yR-rBT" secondAttribute="trailing" constant="10" id="Tgr-Yb-eoH"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ZF-yR-rBT" secondAttribute="bottom" constant="10" id="zEJ-di-ynF"/>
+                                </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-N3-Phr">
-                                <rect key="frame" x="368" y="10" width="40" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mool.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-N3-Phr">
+                                <rect key="frame" x="411" y="10" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Dj5-zA-wne"/>
                                     <constraint firstAttribute="height" constant="40" id="TFa-UD-KuI"/>
@@ -42,18 +48,15 @@
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1Qa-n9-r0Y" secondAttribute="bottom" constant="10" id="DYv-e3-IFR"/>
-                            <constraint firstItem="O1c-N3-Phr" firstAttribute="leading" secondItem="1Qa-n9-r0Y" secondAttribute="trailing" constant="10" id="Dz7-VZ-cbU"/>
                             <constraint firstItem="1Qa-n9-r0Y" firstAttribute="top" secondItem="MAb-mb-lV3" secondAttribute="top" constant="10" id="KsN-uR-74O"/>
-                            <constraint firstAttribute="bottom" secondItem="1Qa-n9-r0Y" secondAttribute="bottom" constant="10" id="Tve-6u-x2X"/>
-                            <constraint firstItem="1Qa-n9-r0Y" firstAttribute="leading" secondItem="MAb-mb-lV3" secondAttribute="leading" constant="10" id="j60-rM-yz4"/>
+                            <constraint firstItem="1Qa-n9-r0Y" firstAttribute="top" secondItem="MAb-mb-lV3" secondAttribute="top" constant="10" id="YqY-F1-J0Z"/>
                         </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="MAb-mb-lV3" secondAttribute="bottom" constant="10" id="1Z3-sP-mKM"/>
                     <constraint firstItem="MAb-mb-lV3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NIt-Kb-mfL"/>
                     <constraint firstItem="MAb-mb-lV3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ofa-KG-LNW"/>
+                    <constraint firstAttribute="bottom" secondItem="MAb-mb-lV3" secondAttribute="bottom" constant="10" id="d8G-50-LGd"/>
                     <constraint firstAttribute="trailing" secondItem="MAb-mb-lV3" secondAttribute="trailing" constant="10" id="lp4-ME-baA"/>
                 </constraints>
             </tableViewCellContentView>
@@ -63,10 +66,14 @@
                 <outlet property="messageBubble" destination="1Qa-n9-r0Y" id="KuE-Ig-XOS"/>
                 <outlet property="rightImageView" destination="O1c-N3-Phr" id="WHx-1n-naW"/>
             </connections>
-            <point key="canvasLocation" x="204.34782608695653" y="89.0625"/>
+            <point key="canvasLocation" x="94.927536231884062" y="106.13839285714285"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="mool.JPG" width="960" height="959"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
