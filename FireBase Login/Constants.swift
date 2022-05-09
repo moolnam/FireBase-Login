@@ -8,10 +8,10 @@
 import Foundation
 
 struct K {
-    static let reusableCellIdentifier: String = "ReusableCell"
+    static let cellIdentifier: String = "ReusableCell"
     static let appName: String = "Chat App"
     static let loginToChat: String = "LoginToChat"
     static let registerToChat: String = "RegisterToCaht"
-    
+    static let celNibName: String = "MessageCell"
     
 }
