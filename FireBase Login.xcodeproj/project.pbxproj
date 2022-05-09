@@ -36,6 +36,10 @@
 		7823B0212825111100B4D91B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7823B0202825111100B4D91B /* FirebaseStorage */; };
 		7823B0232825111100B4D91B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7823B0222825111100B4D91B /* FirebaseStorageCombine-Community */; };
 		7823B0252825143400B4D91B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7823B0242825143400B4D91B /* RegisterViewController.swift */; };
+		78739FAC2828DA7F00EEC625 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78739FAB2828DA7F00EEC625 /* Constants.swift */; };
+		78739FAE2828DCFF00EEC625 /* Masage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78739FAD2828DCFF00EEC625 /* Masage.swift */; };
+		78739FB22828EEC100EEC625 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78739FB02828EEC100EEC625 /* MessageCell.swift */; };
+		78739FB32828EEC100EEC625 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78739FB12828EEC100EEC625 /* MessageCell.xib */; };
 		788A8F9F282516CA00583D28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A8F9E282516CA00583D28 /* LoginViewController.swift */; };
 		78A31CC928263D0C007CF5D7 /* ChatViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A31CC828263D0C007CF5D7 /* ChatViewViewController.swift */; };
 		78EF4B6E282247FC00586052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EF4B6D282247FC00586052 /* AppDelegate.swift */; };
@@ -50,6 +54,10 @@
 /* Begin PBXFileReference section */
 		7823AFEB28250EC300B4D91B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7823B0242825143400B4D91B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		78739FAB2828DA7F00EEC625 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		78739FAD2828DCFF00EEC625 /* Masage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masage.swift; sourceTree = "<group>"; };
+		78739FB02828EEC100EEC625 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		78739FB12828EEC100EEC625 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		788A8F9E282516CA00583D28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78A31CC828263D0C007CF5D7 /* ChatViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewViewController.swift; sourceTree = "<group>"; };
 		78EF4B6A282247FC00586052 /* FireBase Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FireBase Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78739FAF2828DD0500EEC625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78739FAD2828DCFF00EEC625 /* Masage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		78EF4B61282247FC00586052 = {
 			isa = PBXGroup;
 			children = (
@@ -122,9 +138,11 @@
 			children = (
 				78EF4B6D282247FC00586052 /* AppDelegate.swift */,
 				78EF4B6F282247FC00586052 /* SceneDelegate.swift */,
+				78739FAF2828DD0500EEC625 /* Model */,
 				78EF4B842822480500586052 /* Controller */,
 				78EF4B852822481200586052 /* View */,
 				78EF4B79282247FD00586052 /* Assets.xcassets */,
+				78739FAB2828DA7F00EEC625 /* Constants.swift */,
 				78EF4B7B282247FD00586052 /* LaunchScreen.storyboard */,
 				78EF4B7E282247FD00586052 /* Info.plist */,
 				7823AFEB28250EC300B4D91B /* GoogleService-Info.plist */,
@@ -148,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				78EF4B73282247FC00586052 /* Main.storyboard */,
+				78739FB02828EEC100EEC625 /* MessageCell.swift */,
+				78739FB12828EEC100EEC625 /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78739FB32828EEC100EEC625 /* MessageCell.xib in Resources */,
 				78EF4B7D282247FD00586052 /* LaunchScreen.storyboard in Resources */,
 				7823AFEC28250EC300B4D91B /* GoogleService-Info.plist in Resources */,
 				78EF4B7A282247FD00586052 /* Assets.xcassets in Resources */,
@@ -257,12 +278,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				788A8F9F282516CA00583D28 /* LoginViewController.swift in Sources */,
+				78739FB22828EEC100EEC625 /* MessageCell.swift in Sources */,
 				78EF4B78282247FC00586052 /* FireBase_Login.xcdatamodeld in Sources */,
 				7823B0252825143400B4D91B /* RegisterViewController.swift in Sources */,
 				78EF4B72282247FC00586052 /* ViewController.swift in Sources */,
+				78739FAE2828DCFF00EEC625 /* Masage.swift in Sources */,
 				78EF4B6E282247FC00586052 /* AppDelegate.swift in Sources */,
 				78EF4B70282247FC00586052 /* SceneDelegate.swift in Sources */,
 				78A31CC928263D0C007CF5D7 /* ChatViewViewController.swift in Sources */,
+				78739FAC2828DA7F00EEC625 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

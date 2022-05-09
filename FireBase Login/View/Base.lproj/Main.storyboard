@@ -176,28 +176,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="38k-pE-JEs">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="38k-pE-JEs">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vYK-2T-312">
-                                        <rect key="frame" x="61.5" y="0.0" width="291" height="387"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vYK-2T-312">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="674"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="FKp-LY-lKd">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FKp-LY-lKd" id="ok1-m5-GO8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="입력하기" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQq-9T-026">
-                                        <rect key="frame" x="169" y="387" width="76.5" height="387"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="입력하기" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQq-9T-026">
+                                        <rect key="frame" x="0.0" y="674" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Ouf-ZN-MRS"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="iQq-9T-026" firstAttribute="top" secondItem="vYK-2T-312" secondAttribute="bottom" id="4IO-Cq-K64"/>
+                                    <constraint firstItem="iQq-9T-026" firstAttribute="leading" secondItem="38k-pE-JEs" secondAttribute="leading" id="KUt-YL-Qdp"/>
+                                    <constraint firstItem="vYK-2T-312" firstAttribute="leading" secondItem="38k-pE-JEs" secondAttribute="leading" id="UMC-3h-lg0"/>
+                                    <constraint firstItem="vYK-2T-312" firstAttribute="top" secondItem="38k-pE-JEs" secondAttribute="top" id="aFx-K5-upd"/>
+                                    <constraint firstAttribute="trailing" secondItem="iQq-9T-026" secondAttribute="trailing" id="fcW-Y9-PyR"/>
+                                    <constraint firstAttribute="bottom" secondItem="iQq-9T-026" secondAttribute="bottom" id="gde-WT-GwC"/>
+                                    <constraint firstAttribute="trailing" secondItem="vYK-2T-312" secondAttribute="trailing" id="xlB-EV-FEj"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BqG-TK-q1a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="38k-pE-JEs" firstAttribute="leading" secondItem="BqG-TK-q1a" secondAttribute="leading" id="UKZ-Dp-jNR"/>
-                            <constraint firstItem="BqG-TK-q1a" firstAttribute="trailing" secondItem="38k-pE-JEs" secondAttribute="trailing" id="hw6-H4-ui1"/>
-                            <constraint firstItem="38k-pE-JEs" firstAttribute="top" secondItem="BqG-TK-q1a" secondAttribute="top" id="vVw-hY-wBf"/>
-                            <constraint firstItem="BqG-TK-q1a" firstAttribute="bottom" secondItem="38k-pE-JEs" secondAttribute="bottom" id="xdA-JO-V5s"/>
+                            <constraint firstItem="38k-pE-JEs" firstAttribute="leading" secondItem="BqG-TK-q1a" secondAttribute="leading" id="00G-DO-GQL"/>
+                            <constraint firstItem="BqG-TK-q1a" firstAttribute="trailing" secondItem="38k-pE-JEs" secondAttribute="trailing" id="EY3-Oc-cQm"/>
+                            <constraint firstItem="38k-pE-JEs" firstAttribute="trailing" secondItem="BqG-TK-q1a" secondAttribute="trailing" id="TCF-Lt-U4y"/>
+                            <constraint firstItem="38k-pE-JEs" firstAttribute="bottom" secondItem="BqG-TK-q1a" secondAttribute="bottom" id="df7-Rc-mb0"/>
+                            <constraint firstItem="38k-pE-JEs" firstAttribute="top" secondItem="BqG-TK-q1a" secondAttribute="top" id="g5R-K6-8gs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LLc-ln-HSJ">
@@ -207,6 +230,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="vYK-2T-312" id="GKl-k7-kCK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y68-gl-sBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

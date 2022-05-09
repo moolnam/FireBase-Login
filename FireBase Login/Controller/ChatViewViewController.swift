@@ -10,9 +10,18 @@ import Firebase
 
 class ChatViewViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    var messages: [Message] = [
+        Message(sender: "1@1.com", body: "Hi"),
+        Message(sender: "2@1.com", body: "Hello"),
+        Message(sender: "3@1.com", body: "안녕"),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
 
         navigationItem.hidesBackButton = true
         
@@ -33,14 +42,20 @@ class ChatViewViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+extension ChatViewViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCellIdentifier, for: indexPath)
+        cell.textLabel?.text = "\(messages[indexPath.row].body)"
+        
+        return cell
+    }
+    
+    
 }

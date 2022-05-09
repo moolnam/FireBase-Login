@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
                     // 에러 메시지 현지화 설명
                 } else {
                     // Navigate to the ChatViewController
-                    self.performSegue(withIdentifier: "RegisterToCaht", sender: self)
+                    self.performSegue(withIdentifier: K.registerToChat, sender: self)
                     // 에러가 아니라면 내가 가고자 하는 뷰로 아이덴티파이어를 보고 뷰가 전환된다.
                 }
             }
