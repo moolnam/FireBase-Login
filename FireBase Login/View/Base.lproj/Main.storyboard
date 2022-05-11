@@ -209,6 +209,9 @@
                                                 <rect key="frame" x="300" y="50" width="67" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="sendPressed:" destination="aPU-ph-yJP" eventType="touchUpInside" id="nj7-7V-3R9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -238,6 +241,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="messageTextField" destination="iQq-9T-026" id="62G-Cd-Fa9"/>
                         <outlet property="tableView" destination="vYK-2T-312" id="GKl-k7-kCK"/>
                     </connections>
                 </viewController>

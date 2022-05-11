@@ -12,6 +12,14 @@ struct K {
     static let appName: String = "Chat App"
     static let loginToChat: String = "LoginToChat"
     static let registerToChat: String = "RegisterToCaht"
-    static let celNibName: String = "MessageCell"
+    static let cellNibName: String = "MessageCell"
     
+    
+    struct FStore {
+        static let collectionName: String = "messages"
+        static let senderField: String = "sender"
+        static let bodyField: String = "body"
+        static let dateField: String = "date"
+        
+    }
 }
